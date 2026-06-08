@@ -1,0 +1,22 @@
+{
+  "name": "raydiagnostics-workstation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "frontend": "vite --host 127.0.0.1",
+    "backend": ".venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8001 --reload",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {}
+}
